@@ -1,3 +1,4 @@
 name: David West
 markdown: redcarpet
 exclude: ["node_modules", "gulpfile.js", "package.json"]
+permalink: /:categories/:title
