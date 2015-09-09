@@ -606,7 +606,11 @@ nav.ls ul li {
   margin-bottom: 0.88889rem;
   overflow: hidden;
   padding-bottom: 56%;
-  position: relative; }
+  position: relative;
+  pointer-events: none; }
+  @media (max-width: 770px) {
+    .flex-video {
+      pointer-events: initial; } }
 
 .flex-video iframe,
 .flex-video object,
@@ -617,3 +621,10 @@ nav.ls ul li {
   top: 0;
   width: 100%;
   left: 0; }
+
+.fixed-head {
+  position: fixed;
+  z-index: 1; }
+  @media (max-width: 770px) {
+    .fixed-head {
+      position: relative; } }

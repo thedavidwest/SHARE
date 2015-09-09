@@ -1,0 +1,18 @@
+---
+layout: default
+title: mF-music_VIDEOS
+---
+
+<div class="page-head">
+  <h1 class="logo"> [music_VIDEOS(master)]$ ls <span class="blink">▋</span></h1>
+  <nav class="ls">
+    <ul>
+      {% for post in site.categories['music_videos'] %}
+        <li>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+  <h1><a href="../index.html">return to root directory</a></h1>
+</div>
